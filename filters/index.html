@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Filters</title>
+
+	<style>
+     .my_filter{
+
+      -webkit-filter: hue-rotate:(3.142rad);
+      filter: hue-rotate(3.142rad);
+
+
+
+     }
+
+
+
+
+
+    .my_filter:hover{
+
+      animation: 5s myfilteranimation forwards;
+
+    }
+
+
+
+
+     @keyframes myfilteranimation{
+
+	      100%{
+	       -webkit-filter: hue-rotate(0);
+	        filter: hue-rotate(0);
+	       }
+
+     }
+
+
+
+
+	</style>
+</head>
+<body>
+
+<img class="my_filter" src="img/climber2.jpg" alt="climber">
+
+</body>
+</html>
